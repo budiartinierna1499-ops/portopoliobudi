@@ -570,6 +570,41 @@
             color: var(--text-secondary);
             line-height: 1.6;
         }
+        /* ==================== PDF BUTTONS MODUL AJAR ==================== */
+.pdf-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.pdf-btn {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    background: linear-gradient(
+        135deg,
+        var(--neon-cyan),
+        var(--neon-purple)
+    );
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+}
+
+.pdf-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(
+        135deg,
+        var(--neon-pink),
+        var(--neon-purple)
+    );
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.5);
+}
 
         /* Analysis Cards (4 Interactive Cards) */
         .analysis-grid {
@@ -1192,7 +1227,7 @@
             <!-- Gallery Item 2 - Placeholder: "pamong.jpeg" -->
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="gallery-img-container" onclick="openModal(1)">
-                    <img src="pamong.jp2g" alt="Group Discussion">
+                    <img src="pamong.jpeg" alt="Group Discussion">
                 </div>
                 <p class="gallery-caption">Guru Pamong : Ketut Budi Ardika,S.Pd.</p>
             </div>
@@ -1200,7 +1235,7 @@
             <!-- Gallery Item 3 - Placeholder: "observasi.jpeg" -->
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="gallery-img-container" onclick="openModal(2)">
-                    <img src="observasi.jpg" alt="Community Activity">
+                    <img src="observasi.jpeg" alt="Community Activity">
                 </div>
                 <p class="gallery-caption">observasi</p>
             </div>
@@ -1254,12 +1289,30 @@
         <h2 class="section-title">Analisis Artefak</h2>
         <p class="section-subtitle">Rencana Mengajar, Media, Video & Hasil Kerja Siswa</p>
 
-        <!-- Artifact Grid -->
-        <div class="artifact-grid">
-            <div class="artifact-card" data-aos="fade-up">
-                <div class="artifact-title">Rencana Pelaksanaan Pembelajaran</div>
-                <p class="artifact-desc">Rencana pelajaran komprehensif yang selaras dengan standar kurikulum</p>
-            </div>
+       <!-- Artifact Grid -->
+<div class="artifact-grid">
+    <div class="artifact-card" data-aos="fade-up">
+        <div class="artifact-title">Modul Ajar</div>
+        <p class="artifact-desc">
+            Rencana pelajaran komprehensif yang selaras dengan standar kurikulum
+        </p>
+
+        <!-- Tombol PDF -->
+        <div class="pdf-buttons">
+            <a href="pdf/modul1.pdf" target="_blank" class="pdf-btn">
+                Modul 1
+            </a>
+
+            <a href="pdf/modul2.pdf" target="_blank" class="pdf-btn">
+                Modul 2
+            </a>
+
+            <a href="pdf/modul3.pdf" target="_blank" class="pdf-btn">
+                Modul 3
+            </a>
+        </div>
+    </div>
+</div>
 
             <div class="artifact-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="artifact-title">Media Pembelajaran</div>
