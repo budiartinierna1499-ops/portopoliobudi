@@ -521,7 +521,7 @@
     margin: auto;
 }
 
-        .artifact-grid {
+      .artifact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -531,14 +531,19 @@
 }
 
         .artifact-card {
-            background: rgba(168, 85, 247, 0.1);
-            border: 2px solid var(--neon-purple);
-            border-radius: 15px;
-            padding: 1.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            animation: floatCard 3s ease-in-out infinite;
-        }
+    background: rgba(168, 85, 247, 0.1);
+    border: 2px solid var(--neon-purple);
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: floatCard 3s ease-in-out infinite;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
         .artifact-card:nth-child(2) {
             animation-delay: 0.2s;
@@ -686,24 +691,25 @@
     max-width: 1400px;
     margin: auto;
 }
-       .assessment-container {
+      .assessment-container {
     max-width: 1200px;
     width: 100%;
     margin: 3rem auto;
 }
 
-       .cycle-card {
+     .cycle-card {
     background: rgba(168, 85, 247, 0.1);
     border: 2px solid var(--neon-cyan);
     border-radius: 15px;
     padding: 2rem;
     margin-bottom: 2rem;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
     box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
     transition: all 0.3s ease;
     animation: floatCard 3s ease-in-out infinite;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
         .cycle-card:nth-child(2) {
@@ -1246,7 +1252,7 @@
                 <div class="gallery-img-container" onclick="openModal(2)">
                     <img src="observasi.jpeg" alt="Community Activity">
                 </div>
-                <p class="gallery-caption">observasi</p>
+                <p class="gallery-caption">Observasi</p>
             </div>
 
             <!-- Gallery Item 4 - Placeholder: "asistensi.jpeg" -->
@@ -1266,7 +1272,7 @@
              <!-- Gallery Item 6 - Placeholder: "siklus2.jpeg" -->
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="gallery-img-container" onclick="openModal(3)">
-                    <img src="siklus2.jpeg" alt="Student Work">
+                    <img src="silkus2.jpeg" alt="Student Work">
                 </div>
                 <p class="gallery-caption">Siklus II</p>
             </div>
@@ -1300,13 +1306,13 @@
 
        <!-- Artifact Grid -->
 <div class="artifact-grid">
+
     <div class="artifact-card" data-aos="fade-up">
         <div class="artifact-title">Modul Ajar</div>
         <p class="artifact-desc">
             Rencana pelajaran komprehensif yang selaras dengan standar kurikulum
         </p>
 
-        <!-- Tombol PDF -->
         <div class="pdf-buttons">
             <a href="pdf/modul1.pdf" target="_blank" class="pdf-btn">
                 Modul 1
@@ -1321,24 +1327,29 @@
             </a>
         </div>
     </div>
+
+    <div class="artifact-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="artifact-title">Media Pembelajaran</div>
+        <p class="artifact-desc">
+            Sumber daya pengajaran yang interaktif dan menarik
+        </p>
+    </div>
+
+    <div class="artifact-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="artifact-title">Video Edukatif</div>
+        <p class="artifact-desc">
+            Demonstrasi pengajaran dan tutorial yang direkam
+        </p>
+    </div>
+
+    <div class="artifact-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="artifact-title">Hasil Kerja Siswa</div>
+        <p class="artifact-desc">
+            Koleksi tugas dan proyek siswa
+        </p>
+    </div>
+
 </div>
-
-            <div class="artifact-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="artifact-title">Media Pembelajaran</div>
-                <p class="artifact-desc">Sumber daya pengajaran yang interaktif dan menarik</p>
-            </div>
-
-            <div class="artifact-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="artifact-title">Video Edukatif</div>
-                <p class="artifact-desc">Demonstrasi pengajaran dan tutorial yang direkam</p>
-            </div>
-
-            <div class="artifact-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="artifact-title">Hasil Kerja Siswa</div>
-                <p class="artifact-desc">Koleksi tugas dan proyek siswa</p>
-            </div>
-        </div>
-
         <!-- Analysis Cards (Glassmorphism) -->
         <h3 class="section-title" style="font-size: 1.8rem; margin-top: 3rem;">Analisis Mendalam</h3>
 
