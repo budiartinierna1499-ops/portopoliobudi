@@ -857,6 +857,14 @@
             font-family: 'Azeret Mono', monospace;
             box-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
         }
+        .average-row {
+    background: rgba(251, 191, 36, 0.15);
+    font-weight: 700;
+}
+
+.average-row td {
+    border-top: 2px solid var(--neon-gold);
+}
 
         .pdf-modal {
             display: none;
@@ -1276,21 +1284,21 @@
             </div>
             <!-- Gallery Item 5 - Placeholder: "terbimbing2.jpeg" -->
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="gallery-img-container" onclick="openModal(3)">
+                <div class="gallery-img-container" onclick="openModal(4)">
                     <img src="terbimbing2.jpeg" alt="Student Work">
                 </div>
                 <p class="gallery-caption">Siklus I</p>
             </div>
              <!-- Gallery Item 6 - Placeholder: "silkus2.jpeg" -->
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="gallery-img-container" onclick="openModal(3)">
+                <div class="gallery-img-container" onclick="openModal(5)">
                     <img src="silkus2.jpeg" alt="Student Work">
                 </div>
                 <p class="gallery-caption">Siklus II</p>
             </div>
               <!-- Gallery Item 7 - Placeholder: "terbimbing1.jpeg" -->
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="gallery-img-container" onclick="openModal(3)">
+                <div class="gallery-img-container" onclick="openModal(6)">
                     <img src="terbimbing1.jpeg" alt="Student Work">
                 </div>
                 <p class="gallery-caption">Siklus III</p>
@@ -1324,20 +1332,27 @@
         <p class="artifact-desc">
             Rencana pelajaran komprehensif yang selaras dengan standar kurikulum
         </p>
+<div class="pdf-buttons">
 
-        <div class="pdf-buttons">
-            <a href="pdf/modul1.pdf" target="_blank" class="pdf-btn">
-                Modul Ajar Siklus 1
-            </a>
+    <a href="https://drive.google.com/file/d/1jFtWv3IxskE-cdV9hMDWekuI7UnaMJ_4/preview"
+       target="_blank"
+       class="pdf-btn">
+        Modul Ajar Siklus 1
+    </a>
 
-            <a href="pdf/modul2.pdf" target="_blank" class="pdf-btn">
-                Modul Ajar Siklus 2
-            </a>
+    <a href="https://drive.google.com/file/d/1Y77WOOzawdSlKeI7zWG85nEP72d8DMkP/preview"
+       target="_blank"
+       class="pdf-btn">
+        Modul Ajar Siklus 2
+    </a>
 
-            <a href="pdf/modul3.pdf" target="_blank" class="pdf-btn">
-                Modul Ajar Siklus 3
-            </a>
-        </div>
+    <a href="https://drive.google.com/file/d/1481F6_ChhJNTByUV8vF5H_qwhGv1VR6B/preview"
+       target="_blank"
+       class="pdf-btn">
+        Modul Ajar Siklus 3
+    </a>
+
+</div>
     </div>
 
    <div class="artifact-card" data-aos="fade-up" data-aos-delay="100">
@@ -1349,25 +1364,25 @@
 
     <div class="pdf-buttons">
 
-        <a href="pdf/lkpd-siklus1.pdf"
-           target="_blank"
-           class="pdf-btn">
-            LKPD Siklus 1
-        </a>
+    <a href="https://drive.google.com/file/d/1XCS86pHSNJIfjCdYa4uprWSwB80rLQJH/preview"
+       target="_blank"
+       class="pdf-btn">
+        LKPD Siklus 1
+    </a>
 
-        <a href="pdf/lkpd-siklus2.pdf"
-           target="_blank"
-           class="pdf-btn">
-            LKPD Siklus 2
-        </a>
+    <a href="https://drive.google.com/file/d/1U6vA-w-o3kyx-8yVqHj8j1O0i39ZkXSo/preview"
+       target="_blank"
+       class="pdf-btn">
+        LKPD Siklus 2
+    </a>
 
-        <a href="pdf/lkpd-siklus3.pdf"
-           target="_blank"
-           class="pdf-btn">
-            LKPD Siklus 3
-        </a>
+    <a href="https://drive.google.com/file/d/1yCKzz1Et8eKlyGnoJUCKFy2O3gDaDx49/preview"
+       target="_blank"
+       class="pdf-btn">
+        LKPD Siklus 3
+    </a>
 
-    </div>
+</div>
 </div>
 
 <div class="artifact-card" data-aos="fade-up" data-aos-delay="200">
@@ -1408,8 +1423,12 @@
 
     </div>
 </div>
+</div>
         <!-- Analysis Cards (Glassmorphism) -->
-        <h3 class="section-title" style="font-size: 1.8rem; margin-top: 3rem;">Analisis Mendalam</h3>
+        <h3 class="section-title" 
+            style="font-size: 1.8rem; margin-top: 3rem;">
+            Analisis Mendalam
+        </h3>
 
         <div class="analysis-grid">
             <div class="analysis-card" data-aos="fade-up">
@@ -1506,34 +1525,18 @@
                     </span>
                 </td>
             </tr>
-
+<tr>
+ <tr class="average-row">
+    <td>Rata-rata</td>
+    <td><span class="score-badge">90</span></td>
+    <td><span class="score-badge">90</span></td>
+</tr>
         </tbody>
 
     </table>
 
 </div>
-                <table class="assessment-table">
-                    <thead>
-                        <tr>
-                            <th>Penilai</th>
-                            <th>Instrumen 7</th>
-                            <th>Instrumen 8</th>
-                            <th>Rata-rata</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Guru Pamong</td>
-                            <td>90</td>
-                            <td>90</td>
-                            <td><span class="score-badge">90</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="pdf-button-container">
-                    <button class="pdf-button" onclick="openPdfModal('cycle3')">Lihat PDF Penilaian Guru Pamong</button>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -1603,7 +1606,7 @@
             <!-- LOGO PLACEHOLDER #3: Personal Logo/Watermark - Easy to swap with your actual personal logo -->
             <img src="logo-erna.jpeg" alt="Personal Logo" class="personal-logo">
 
-            <p class="copyright">© 2024 PPG E-Portfolio. Semua hak dilindungi.</p>
+            <p class="copyright">© 2026 PPG Calon Guru Universitas Pendidikan Ganesha. Semua hak dilindungi.</p>
         </div>
     </footer>
 
@@ -1621,13 +1624,21 @@
 
        const pdfLinks = {
 
-    perangkat1: "pdf/perangkat-siklus1.pdf",
-    perangkat2: "pdf/perangkat-siklus2.pdf",
-    perangkat3: "pdf/perangkat-siklus3.pdf",
+    perangkat1: "https://drive.google.com/file/d/1OG-5A4avIkKnVTTh3vC3ko2YKdzI2ilq/preview",
+    perangkat2: "https://drive.google.com/file/d/1qH9wHFV9TLT_tDfUl_mqNN7MsK2DRc56/preview",
+    perangkat3: "https://drive.google.com/file/d/1kzApo_Ddfuey69HmOp1c-QMTl-tF9-0H/preview",
 
-    mengajar1: "pdf/mengajar-siklus1.pdf",
-    mengajar2: "pdf/mengajar-siklus2.pdf",
-    mengajar3: "pdf/mengajar-siklus3.pdf"
+    mengajar1: "https://drive.google.com/file/d/1rer5vey_HqTeTvOuqpzFOfacI5UzNZYH/preview",
+    mengajar2: "https://drive.google.com/file/d/12X_4ZZp1_px9Q5se85HxEVtyARCmh0qV/preview",
+    mengajar3: "https://drive.google.com/file/d/146kHDRIccyrIPA9aIFTyEVaUvn95VOVt/preview"
+
+    modul1: "https://drive.google.com/file/d/1jFtWv3IxskE-cdV9hMDWekuI7UnaMJ_4/preview",
+    modul2: "https://drive.google.com/file/d/1Y77WOOzawdSlKeI7zWG85nEP72d8DMkP/preview",
+    modul3: "https://drive.google.com/file/d/1481F6_ChhJNTByUV8vF5H_qwhGv1VR6B/preview",
+
+    lkpd1: "https://drive.google.com/file/d/1XCS86pHSNJIfjCdYa4uprWSwB80rLQJH/preview",
+    lkpd2: "https://drive.google.com/file/d/1U6vA-w-o3kyx-8yVqHj8j1O0i39ZkXSo/preview",
+    lkpd3: "https://drive.google.com/file/d/1yCKzz1Et8eKlyGnoJUCKFy2O3gDaDx49/preview"
 
 };
 
@@ -1640,6 +1651,14 @@
     mengajar1: "Penilaian Praktik Mengajar - Siklus I",
     mengajar2: "Penilaian Praktik Mengajar - Siklus II",
     mengajar3: "Penilaian Praktik Mengajar - Siklus III"
+
+    modul1: "Modul Ajar Siklus I",
+    modul2: "Modul Ajar Siklus II",
+    modul3: "Modul Ajar Siklus III",
+
+    lkpd1: "LKPD Siklus I",
+    lkpd2: "LKPD Siklus II",
+    lkpd3: "LKPD Siklus III",
 
 };
 
@@ -1764,10 +1783,10 @@
             const images = [
 'kepsek.jpeg',
 'pamong.jpeg',
-'observasi.jpg',
+'observasi.jpeg',
 'asistensi.jpeg',
 'terbimbing2.jpeg',
-'siklus2.jpeg',
+'silkus2.jpeg',
 'terbimbing1.jpeg'
 ];
             modalImage.src = images[index];
